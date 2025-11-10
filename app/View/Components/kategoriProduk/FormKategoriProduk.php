@@ -20,6 +20,8 @@ class FormKategoriProduk extends Component
             $this->id = $kategori->$id;
             $this->nama_kategori = $kategori->nama_kategori;
             $this->action = route('master-data.kategori-produk.update', $kategori->id);
+        } else {
+            $this->action = route('master-data.kategori-produk.store');
         }
     }
 
